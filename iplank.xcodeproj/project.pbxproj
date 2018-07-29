@@ -137,7 +137,6 @@
 		18AA45CA1B2C6E2900780AAC /* 07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18AA45C31B2C6E2900780AAC /* 07.jpg */; };
 		18AA45CC1B2C70EF00780AAC /* 00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18AA45CB1B2C70EF00780AAC /* 00.jpg */; };
 		18AA45CF1B2C728200780AAC /* BBAutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA45CE1B2C728200780AAC /* BBAutoSize.m */; };
-		18AA45D31B2C895F00780AAC /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AA45D11B2C895F00780AAC /* libMobClickLibrary.a */; };
 		18B3816C188A615D0073CAAA /* RankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3816B188A615D0073CAAA /* RankingView.m */; };
 		18B59559191BC0B900614310 /* plank1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B59558191BC0B900614310 /* plank1@2x.png */; };
 		18B5955C191BC24D00614310 /* centerbtn-hl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B5955A191BC24D00614310 /* centerbtn-hl@2x.png */; };
@@ -375,8 +374,6 @@
 		18AA45CB1B2C70EF00780AAC /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
 		18AA45CD1B2C728200780AAC /* BBAutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAutoSize.h; sourceTree = "<group>"; };
 		18AA45CE1B2C728200780AAC /* BBAutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAutoSize.m; sourceTree = "<group>"; };
-		18AA45D11B2C895F00780AAC /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		18AA45D21B2C895F00780AAC /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		18B3816A188A615D0073CAAA /* RankingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingView.h; sourceTree = "<group>"; };
 		18B3816B188A615D0073CAAA /* RankingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingView.m; sourceTree = "<group>"; };
 		18B59558191BC0B900614310 /* plank1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plank1@2x.png"; sourceTree = "<group>"; };
@@ -458,7 +455,6 @@
 				18D0685C191E9375009F26E9 /* CoreText.framework in Frameworks */,
 				18175728188E766100CC2872 /* libz.dylib in Frameworks */,
 				187AAF231871A37B00FD04A4 /* CoreVideo.framework in Frameworks */,
-				18AA45D31B2C895F00780AAC /* libMobClickLibrary.a in Frameworks */,
 				187AAF211871A36E00FD04A4 /* OpenGLES.framework in Frameworks */,
 				181B813C18712144008CB0B9 /* CoreGraphics.framework in Frameworks */,
 				181B8243187125F3008CB0B9 /* SystemConfiguration.framework in Frameworks */,
@@ -506,7 +502,6 @@
 			isa = PBXGroup;
 			children = (
 				18E695061B667FEB00857168 /* AFNetworking */,
-				18AA45D01B2C895F00780AAC /* UMAnalytics_Sdk_2.2.0.OpenUDID */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -855,15 +850,6 @@
 			path = surprise;
 			sourceTree = "<group>";
 		};
-		18AA45D01B2C895F00780AAC /* UMAnalytics_Sdk_2.2.0.OpenUDID */ = {
-			isa = PBXGroup;
-			children = (
-				18AA45D11B2C895F00780AAC /* libMobClickLibrary.a */,
-				18AA45D21B2C895F00780AAC /* MobClick.h */,
-			);
-			path = UMAnalytics_Sdk_2.2.0.OpenUDID;
-			sourceTree = "<group>";
-		};
 		18D06860191EA40E009F26E9 /* pickerview */ = {
 			isa = PBXGroup;
 			children = (
@@ -977,7 +963,8 @@
 				ORGANIZATIONNAME = bob;
 				TargetAttributes = {
 					181B813518712144008CB0B9 = {
-						DevelopmentTeam = RKQM86PXNB;
+						DevelopmentTeam = KZK8GVF7DH;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -1246,8 +1233,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: caiguo huang (RKQM86PXNB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: caiguo huang (RKQM86PXNB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1286,8 +1273,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: caiguo huang (RKQM86PXNB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: caiguo huang (RKQM86PXNB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1309,8 +1296,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: caiguo huang (ZYURUDAF3A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: caiguo huang (ZYURUDAF3A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZK8GVF7DH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iplank/iplank-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1325,8 +1314,10 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.zhu.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1339,8 +1330,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: caiguo huang (ZYURUDAF3A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: caiguo huang (ZYURUDAF3A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZK8GVF7DH;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iplank/iplank-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -1354,8 +1347,10 @@
 					"$(PROJECT_DIR)/iplank/class/lib/UMAnalytics_Sdk_2.2.0.OpenUDID",
 				);
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bobo.zhu.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 arm64 armv7s";
 				WRAPPER_EXTENSION = app;

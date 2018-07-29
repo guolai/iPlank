@@ -31,7 +31,7 @@
 #import "BResult.h"
 #import "BBPlayer.h"
 #import "PopupView.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 
 typedef enum {
     e_SD_failed,
@@ -525,7 +525,7 @@ typedef enum {
 #pragma mark - event
 - (void)plankViewPressed
 {
-    [MobClick endEvent:@"meinv"];
+//    [MobClick endEvent:@"meinv"];
     _beautifaulGirlView.hidden = NO;
     [self updateGirl];
     self.updateGirlTimer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(updateGirl) userInfo:nil repeats:YES];
@@ -570,19 +570,19 @@ typedef enum {
             [self saveData];
             if(_bZhengjiShi)
             {
-                [MobClick event:@"savedata" label:@"zhengjishi"];
+//                [MobClick event:@"savedata" label:@"zhengjishi"];
             }
             else
             {
-               [MobClick event:@"savedata" label:@"daojishi"];
+//               [MobClick event:@"savedata" label:@"daojishi"];
             }
             if([UserDefault isGirl])
             {
-                [MobClick event:@"boygirl" label:@"girl"];
+//                [MobClick event:@"boygirl" label:@"girl"];
             }
             else
             {
-                [MobClick event:@"boygirl" label:@"boy"];
+//                [MobClick event:@"boygirl" label:@"boy"];
             }
             
             [self.navigationController popViewControllerAnimated:YES];

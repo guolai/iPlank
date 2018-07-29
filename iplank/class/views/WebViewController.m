@@ -8,7 +8,7 @@
 
 #import "WebViewController.h"
 #import "UrlCache.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 
 @interface WebViewController ()<UIWebViewDelegate, UIScrollViewDelegate>
 {
@@ -48,7 +48,8 @@
         strFrom = @"Donate";
     }
 
-    [MobClick event:@"webbrower" label:strFrom];
+//    [MobClick event:@"webbrower" label:strFrom];
+    strUrl = [NSString stringWithFormat:@"%@?a=%d", strUrl, arc4random()%2000];
     [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:strUrl]]];
 }
 

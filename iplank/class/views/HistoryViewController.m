@@ -14,7 +14,7 @@
 #import "DataModel.h"
 #import "UserDefault.h"
 #import "CoutView.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 
 
 @interface HistoryViewController ()
@@ -73,7 +73,7 @@
     
 #endif
     self.countView.countType = e_Count_Times;
-    [MobClick event:@"historydata"];
+//    [MobClick event:@"historydata"];
 }
 
 - (void)dismissCurrentView

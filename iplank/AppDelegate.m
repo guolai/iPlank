@@ -12,7 +12,7 @@
 #import "DataModel.h"
 #import "UserDefault.h"
 //#import "ShareWeibo.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 #import "BBNavigationViewController.h"
 
 @implementation AppDelegate
@@ -50,12 +50,12 @@
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
     [[NSURLCache sharedURLCache] setDiskCapacity:0];
     [[NSURLCache sharedURLCache] setMemoryCapacity:0];
-    [MobClick startWithAppkey:@"537b60b656240b72bb01f698"];
-    [MobClick updateOnlineConfig];
+//    [MobClick startWithAppkey:@"537b60b656240b72bb01f698"];
+//    [MobClick updateOnlineConfig];
     
-    UIView *loadingView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //    UIView *mainview = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window addSubview:loadingView];
+//    UIView *loadingView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    //    UIView *mainview = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    [self.window addSubview:loadingView];
     
 #if 1
     if([DataModel isFirstIn])
@@ -70,38 +70,38 @@
 //    else
     {
         
-        
-
-        
-        if(1)
-        {
-            UIImageView *imgView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-            [imgView setImage:[UIImage imageNamed:@"Default-568h.png"]];
-            [loadingView  addSubview:imgView];
-//            NSMutableArray *arrayFrames = [[NSMutableArray alloc] init];
-//            for (int i = 0; i < 15; i++)
-//            {
-//                //            NSString *strFileName = [NSString stringWithFormat:@"loading_%d.png", i + 1];
-//                UIImage *temImg = [UIImage imageNamed:@"loading_1.png"];
-//                [arrayFrames addObject:temImg];
-//            }
-//            
-//            NSLog(@"%@", arrayFrames);
-//            UIImageView *animtView = [[UIImageView alloc] init];
-//            [animtView setFrame:CGRectMake(185, 369, 128, 77)];
-//            animtView.animationImages = arrayFrames;
-//            animtView.animationDuration = 2.0;
-//            animtView.animationRepeatCount = 1;
-//            [loadingView addSubview:animtView];
-//            [animtView startAnimating];
-        }
-        
-        [UIView animateWithDuration:0.2 animations:^{
-            loadingView.alpha = 0.8;
-        } completion:^(BOOL finished) {
-            [loadingView removeFromSuperview];
-            [self showPlankView];
-        }];
+        [self showPlankView];
+//
+//        
+//        if(1)
+//        {
+//            UIImageView *imgView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//            [imgView setImage:[UIImage imageNamed:@"Default-568h.png"]];
+//            [loadingView  addSubview:imgView];
+////            NSMutableArray *arrayFrames = [[NSMutableArray alloc] init];
+////            for (int i = 0; i < 15; i++)
+////            {
+////                //            NSString *strFileName = [NSString stringWithFormat:@"loading_%d.png", i + 1];
+////                UIImage *temImg = [UIImage imageNamed:@"loading_1.png"];
+////                [arrayFrames addObject:temImg];
+////            }
+////            
+////            NSLog(@"%@", arrayFrames);
+////            UIImageView *animtView = [[UIImageView alloc] init];
+////            [animtView setFrame:CGRectMake(185, 369, 128, 77)];
+////            animtView.animationImages = arrayFrames;
+////            animtView.animationDuration = 2.0;
+////            animtView.animationRepeatCount = 1;
+////            [loadingView addSubview:animtView];
+////            [animtView startAnimating];
+//        }
+//        
+//        [UIView animateWithDuration:0.2 animations:^{
+//            loadingView.alpha = 0.8;
+//        } completion:^(BOOL finished) {
+//            [loadingView removeFromSuperview];
+//            [self showPlankView];
+//        }];
     }
 #else
     //    [self showHomeView];

@@ -14,7 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "BBPlayer.h"
 #import "NSString+UUID.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 
 @interface PodLibViewController ()<UITableViewDataSource, UITableViewDelegate,MPMediaPickerControllerDelegate>
 @property (nonatomic, strong) UITableView *tblView;
@@ -304,7 +304,7 @@ static void CheckResult(OSStatus result, const char *operation)
                     [[BBPlayer shareInstance] addPlayerItemToFile:plarItem];
                     [self.arrayData addObject:plarItem];
                     [self.tblView reloadData];
-                    [MobClick event:@"import"];
+//                    [MobClick event:@"import"];
                     [self dismissProgressHUD];
                 });
                

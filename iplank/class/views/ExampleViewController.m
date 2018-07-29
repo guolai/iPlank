@@ -9,7 +9,7 @@
 #import "ExampleViewController.h"
 #import "SCGIFImageView.h"
 #import "WebViewController.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 
 @interface ExampleViewController ()
 {
@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [MobClick event:@"gifpressed"];
+//    [MobClick event:@"gifpressed"];
     [self showBackButton:nil style:e_Nav_Green action:nil];
     [self showTitle:NSLocalizedString(@"do it with me", nil) style:e_Nav_Green];
 }

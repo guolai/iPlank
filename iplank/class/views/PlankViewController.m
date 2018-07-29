@@ -28,7 +28,7 @@
 #import "ExampleViewController.h"
 #import "SettingViewController.h"
 #import "PopupView.h"
-#import "MobClick.h"
+//#import "MobClick.h"
 #import "UserDefault.h"
 
 typedef enum {
